@@ -1,7 +1,7 @@
 # Личный проект «Мишка» 
 
 * Студент: [Валерий](https://up.htmlacademy.ru/adaptive/22/user/1547379).
-* Наставник: `Неизвестно`.
+* Наставник: [Татьяна Симоненко] (https://htmlacademy.ru/profile/tatien).
 
 ---
 
