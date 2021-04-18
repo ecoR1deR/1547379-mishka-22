@@ -4,6 +4,11 @@
   line-height: 16px;
   text-transform: uppercase;
   color: @light-green;
+  padding-bottom: 25px;
+}
+
+.filter__type {
+  padding-bottom: 50px;
 }
 
 .filter-name {
@@ -21,6 +26,42 @@
   font-size: 14px;
   line-height: 16px;
 }
+
+.filter-name__radio {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  padding-left: 60px;
+  content: "";
+  background-image: url("/img/form/Radio.svg");
+  background-repeat: no-repeat;
+  display: flex;
+  width: 320px;
+  align-items: center;
+ }
+
+.filter-input-radio:checked+label::before  {
+  content: "";
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  left: 0;
+  background-image: url("/img/form/radio_active.svg");
+  background-repeat: no-repeat;
+}
+
+.filter-input-radio:checked+label::after  {
+  content: "";
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  background-image: url("");
+  background-repeat: no-repeat;
+}
+
 .button__submit {
   font-size: 17px;
   line-height: 16px;
