@@ -4,6 +4,7 @@
   line-height: 16px;
   text-transform: uppercase;
   color: @light-green;
+  padding-top: 25px;
   padding-bottom: 25px;
 }
 
@@ -27,15 +28,14 @@
   line-height: 16px;
 }
 
-.filter-name__radio {
-  font-weight: bold;
+.filter-name-radio {
   font-size: 17px;
   line-height: 18px;
+  font-weight: bold;
   position: absolute;
   width: 42px;
   height: 42px;
   padding-left: 60px;
-  content: "";
   background-image: url("/img/form/Radio.svg");
   background-repeat: no-repeat;
   display: flex;
@@ -62,24 +62,53 @@
   background-repeat: no-repeat;
 }
 
-.button__submit {
+.filter__сolor {
+  padding-bottom: 60px;
+}
+
+.filter-name-checkbox {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  padding-left: 60px;
+  background-image: url("/img/form/Checkbox.svg");
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.filter-input-checkbox:checked+label::before {
+  position: absolute;
+  width: 24px;
+  height: 17px;
+  top: 11px;
+  left: 7px;
+  content: "";
+  background-image: url("/img/form/Tick.svg");
+  background-repeat: no-repeat;
+}
+
+.button-submit {
   font-size: 17px;
   line-height: 16px;
   background-color: transparent;
 }
 
-.button__submit:link {
+.button-submit:link {
   color: @light-black;
   background: @basic-white;
 }
 
-.button__submit:hover {
+.button-submit:hover {
   color: @basic-white;
   background: @light-black;
   padding: 14px 45px 14px 45px;
 }
 
-.button__submit:active {
+.button-submit:active {
   color: @lighten-black;
   background: @light-black;
 }
