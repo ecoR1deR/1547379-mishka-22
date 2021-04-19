@@ -91,6 +91,36 @@
   background-repeat: no-repeat;
 }
 
+.filter-input-checkbox+label:hover::after {
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  left: 0px;
+  content: "";
+  background-image: url("/img/form/Border_green_checkbox.svg");
+  background-repeat: no-repeat;
+}
+
+.filter-input-checkbox+label:active::before {
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  left: -1px;
+  content: "";
+  background-image: url("/img/form/checkbox_active.svg");
+  background-repeat: no-repeat;
+}
+
+.filter-input-checkbox:checked+label:active::after {
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  left: -1px;
+  content: "";
+  background-image: url("/img/form/checkbox_active.svg");
+  background-repeat: no-repeat;
+}
+
 .button-submit {
   font-size: 17px;
   line-height: 16px;
