@@ -16,6 +16,7 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
+  padding-top: 20px;
 }
 
 .filter-username {
@@ -39,11 +40,11 @@
   background-image: url("/img/form/Radio.svg");
   background-repeat: no-repeat;
   display: flex;
-  width: 320px;
+  min-width: 320px;
   align-items: center;
- }
+}
 
-.filter-input-radio:checked+label::before  {
+.filter-input-radio:checked + label::before {
   content: "";
   position: absolute;
   width: 42px;
@@ -53,7 +54,7 @@
   background-repeat: no-repeat;
 }
 
-.filter-input-radio:checked+label::after  {
+.filter-input-radio:checked + label::after {
   content: "";
   position: absolute;
   width: 42px;
@@ -80,7 +81,7 @@
   align-items: center;
 }
 
-.filter-input-checkbox:checked+label::before {
+.filter-input-checkbox:checked + label::before {
   position: absolute;
   width: 24px;
   height: 17px;
@@ -91,33 +92,13 @@
   background-repeat: no-repeat;
 }
 
-.filter-input-checkbox+label:hover::after {
+.filter-input-checkbox + label:hover::after {
   position: absolute;
   width: 38px;
   height: 38px;
-  left: 0px;
+  left: 0;
   content: "";
   background-image: url("/img/form/Border_green_checkbox.svg");
-  background-repeat: no-repeat;
-}
-
-.filter-input-checkbox+label:active::before {
-  position: absolute;
-  width: 38px;
-  height: 38px;
-  left: -1px;
-  content: "";
-  background-image: url("/img/form/checkbox_active.svg");
-  background-repeat: no-repeat;
-}
-
-.filter-input-checkbox:checked+label:active::after {
-  position: absolute;
-  width: 38px;
-  height: 38px;
-  left: -1px;
-  content: "";
-  background-image: url("/img/form/checkbox_active.svg");
   background-repeat: no-repeat;
 }
 
@@ -125,6 +106,8 @@
   font-size: 17px;
   line-height: 16px;
   background-color: transparent;
+  margin-top: 30px;
+  margin-bottom: 55px;
 }
 
 .button-submit:link {
@@ -141,4 +124,93 @@
 .button-submit:active {
   color: @lighten-black;
   background: @light-black;
+}
+
+//  Стилизация placeholder
+//  ::-webkit-input-placeholder
+//  ::-moz-placeholder
+//  :-ms-input-placeholder
+//  :-moz-placeholder
+
+.filter-input-username {
+  font-family: "Open Sans" "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  width: 260px;
+  height: 52px;
+  border: none;
+  border-bottom: 2px solid;
+}
+
+.filter-input-username::placeholder {
+  font-family: "Open Sans" "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  opacity: 0.3;
+}
+
+.filter-input-username:hover {
+  border-bottom: 2px solid @light-green;
+}
+
+.form-contact-phone {
+  font-family: "Open Sans" "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  width: 260px;
+  height: 52px;
+  border: none;
+  border-bottom: 2px solid;
+}
+
+.form-contact-phone::placeholder {
+  font-family: "Open Sans" "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  opacity: 0.3;
+}
+
+.form-contact-phone:hover {
+  border-bottom: 2px solid @light-green;
+}
+
+.form-contact-email {
+  font-family: "Open Sans" "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  width: 260px;
+  height: 52px;
+  border: none;
+  border-bottom: 2px solid;
+}
+
+.form-contact-email::placeholder {
+  font-family: "Open Sans" "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  opacity: 0.3;
+}
+
+.form-contact-email:hover {
+  border-bottom: 2px solid @light-green;
+}
+
+.filter__textarea {
+  font-family: "Open Sans" "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  width: 260px;
+  height: 142px;
+  border: 2px solid;
+}
+
+.filter__textarea::placeholder {
+  font-family: "Open Sans" "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  opacity: 0.3;
+}
+
+.filter__textarea:hover {
+  border: 2px solid @light-green;
 }
