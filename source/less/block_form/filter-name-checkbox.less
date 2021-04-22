@@ -1,0 +1,34 @@
+.filter-name-checkbox {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  padding-left: 60px;
+  background-image: url("../img/form/Checkbox.svg");
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.filter-input-checkbox:checked + label::before {
+  position: absolute;
+  width: 24px;
+  height: 17px;
+  top: 11px;
+  left: 7px;
+  content: "";
+  background-image: url("../img/form/Tick.svg");
+  background-repeat: no-repeat;
+}
+
+.filter-input-checkbox + label:hover::after {
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  left: 0;
+  content: "";
+  background-image: url("../img/form/Border_green_checkbox.svg");
+  background-repeat: no-repeat;
+}
